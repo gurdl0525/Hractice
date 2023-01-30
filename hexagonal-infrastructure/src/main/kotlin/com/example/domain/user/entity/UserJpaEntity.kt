@@ -1,4 +1,4 @@
-package com.example.domain.auth.entity
+package com.example.domain.user.entity
 
 import javax.persistence.*
 

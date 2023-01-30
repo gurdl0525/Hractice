@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7badd2cc-ae59-4d23-b444-4105ecd681dd" name="Changes" comment="🔍::Path 변경">
+    <list default="true" id="7badd2cc-ae59-4d23-b444-4105ecd681dd" name="Changes" comment="🏮::NullPointException 해결">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/SecurityProperties.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/SecurityProperties.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/UserPersistenceAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/UserPersistenceAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/entity/UserJpaEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/entity/UserJpaEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/exception/DuplicatedMemberException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/exception/DuplicatedMemberException.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/mapper/UserMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/mapper/UserMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/repository/UserJpaRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/repository/UserJpaRepository.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,37 +87,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Users/kanghyeok/IdeaProjects/Hractice/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/exception",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.scopes",
-    "spring.configuration.checksum": "3449d87ce50067df36617439a07b1f3d",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kanghyeok/IdeaProjects/Hractice/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/exception&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3449d87ce50067df36617439a07b1f3d&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "kotlin"
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;kotlin&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/exception" />
@@ -296,7 +300,8 @@
       <updated>1675059602588</updated>
       <workItem from="1675059603622" duration="574000" />
       <workItem from="1675060186415" duration="14562000" />
-      <workItem from="1675085718379" duration="300000" />
+      <workItem from="1675085718379" duration="618000" />
+      <workItem from="1675114491150" duration="387000" />
     </task>
     <task id="LOCAL-00001" summary="project setting">
       <created>1675061844281</created>
@@ -529,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675074762898</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="🏮::NullPointException 해결">
+      <created>1675086265090</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1675086265090</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,7 +559,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="::build.gradle.kts" />
     <MESSAGE value="::.gitkeep" />
     <MESSAGE value="::PropertyConfig" />
     <MESSAGE value="::AnnotationConfig" />
@@ -572,6 +583,7 @@
     <MESSAGE value="::open 키워드 추가" />
     <MESSAGE value="::bootJar막기" />
     <MESSAGE value="::Path 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="::Path 변경" />
+    <MESSAGE value="::NullPointException 해결" />
+    <option name="LAST_COMMIT_MESSAGE" value="::NullPointException 해결" />
   </component>
 </project>

@@ -1,9 +1,9 @@
-package com.example.domain.auth
+package com.example.domain.user
 
 import com.example.doamin.user.model.User
-import com.example.domain.auth.exception.DuplicatedMemberException
-import com.example.domain.auth.mapper.UserMapper
-import com.example.domain.auth.repository.UserJpaRepository
+import com.example.domain.user.exception.DuplicatedMemberException
+import com.example.domain.user.mapper.UserMapper
+import com.example.domain.user.repository.UserJpaRepository
 import com.example.domain.auth.spi.`in`.UserPort
 import org.springframework.stereotype.Component
 
