@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7badd2cc-ae59-4d23-b444-4105ecd681dd" name="Changes" comment="project setting">
-      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-application/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-application/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/doamin/user/model/User.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/annotation/Aggregate.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/error/BusinessException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/error/ErrorProperty.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-domain/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-domain/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +63,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Kotlin Annotation" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -74,7 +81,6 @@
   <component name="ProjectId" id="2L2C4wwXenpW79gGdPh8x7fbPm6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -89,12 +95,16 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.scopes",
     "spring.configuration.checksum": "f3af08012c74640cb97cdcf5e3a1facd",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ],
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
       "kotlin"
     ]
@@ -132,10 +142,18 @@
     </configuration>
     <configuration name="Hractice [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="DB_DRIVE" value="com.mysql.cj.jdbc.Driver" />
+            <entry key="DB_PASSWORD" value="kang0525@" />
+            <entry key="DB_URL" value="jdbc:mysql://localhost:3306/Hexagon" />
+            <entry key="DB_USERNAME" value="root" />
+          </map>
+        </option>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -221,6 +239,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.Hractice [bootJar]" />
+      <item itemvalue="Gradle.Hractice [build]" />
+      <item itemvalue="Gradle.Hractice [clean]" />
+      <item itemvalue="Gradle.Hractice [jar]" />
+      <item itemvalue="Gradle.Hractice [testClasses]" />
+      <item itemvalue="Spring Boot.HracticeApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Hractice [build]" />
@@ -240,7 +266,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675059602588</updated>
       <workItem from="1675059603622" duration="574000" />
-      <workItem from="1675060186415" duration="2596000" />
+      <workItem from="1675060186415" duration="4456000" />
     </task>
     <task id="LOCAL-00001" summary="project setting">
       <created>1675061844281</created>
@@ -249,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675061844281</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="project setting">
+      <created>1675062996004</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675062996004</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
