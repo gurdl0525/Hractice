@@ -17,7 +17,7 @@ spring:
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
 
-  jwt:
-    secret_key: ${SECRET_KEY}
-    access_exp: ${ACCESS_EXP}
-    refresh_exp: ${REFRESH_EXP}
+jwt:
+  secret_key: ${SECRET_KEY}
+  access_exp: ${ACCESS_EXP}
+  refresh_exp: ${REFRESH_EXP}
