@@ -1,7 +1,7 @@
 package com.example.global.error
 
 abstract class BusinessException(
-    val errorProperty: ErrorProperty
+    open val customErrorProperty: CustomErrorProperty
 ): RuntimeException() {
     override fun fillInStackTrace() = this
 }
