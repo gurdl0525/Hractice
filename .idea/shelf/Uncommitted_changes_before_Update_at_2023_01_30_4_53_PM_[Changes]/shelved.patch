@@ -1,0 +1,99 @@
+Index: hexagonal-domain/build.gradle.kts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>dependencies {\n\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hexagonal-domain/build.gradle.kts b/hexagonal-domain/build.gradle.kts
+--- a/hexagonal-domain/build.gradle.kts	(revision f90f445165d16163328cdfd3f353bb46717d4d05)
++++ b/hexagonal-domain/build.gradle.kts	(date 1675064572832)
+@@ -1,3 +1,2 @@
+ dependencies {
+-
+ }
+\ No newline at end of file
+Index: hexagonal-infrastructure/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hexagonal-infrastructure/src/main/resources/application.yml b/hexagonal-infrastructure/src/main/resources/application.yml
+--- a/hexagonal-infrastructure/src/main/resources/application.yml	(revision f90f445165d16163328cdfd3f353bb46717d4d05)
++++ b/hexagonal-infrastructure/src/main/resources/application.yml	(date 1675063551835)
+@@ -1,0 +1,23 @@
++spring:
++
++  jackson:
++    property-naming-strategy: SNAKE_CASE
++
++  jpa:
++    hibernate:
++      ddl-auto: update
++    properties:
++      hibernate:
++        format_sql: true
++        show_sql: true
++
++  datasource:
++    driver-class-name: ${DB_DRIVE}
++    url: ${DB_URL}
++    username: ${DB_USERNAME}
++    password: ${DB_PASSWORD}
++
++  jwt:
++    secret_key: ${SECRET_KEY}
++    access_exp: ${ACCESS_EXP}
++    refresh_exp: ${REFRESH_EXP}
+\ No newline at end of file
+Index: hexagonal-domain/src/main/kotlin/com/example/global/error/ErrorProperty.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hexagonal-domain/src/main/kotlin/com/example/global/error/ErrorProperty.kt b/hexagonal-domain/src/main/kotlin/com/example/global/error/ErrorProperty.kt
+new file mode 100644
+--- /dev/null	(date 1675064681477)
++++ b/hexagonal-domain/src/main/kotlin/com/example/global/error/ErrorProperty.kt	(date 1675064681477)
+@@ -0,0 +1,7 @@
++package com.example.global.error
++
++interface ErrorProperty {
++    fun status(): Int
++
++    fun message(): String
++}
+\ No newline at end of file
+Index: hexagonal-domain/src/main/kotlin/com/example/global/error/BusinessException.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hexagonal-domain/src/main/kotlin/com/example/global/error/BusinessException.kt b/hexagonal-domain/src/main/kotlin/com/example/global/error/BusinessException.kt
+new file mode 100644
+--- /dev/null	(date 1675064781071)
++++ b/hexagonal-domain/src/main/kotlin/com/example/global/error/BusinessException.kt	(date 1675064781071)
+@@ -0,0 +1,7 @@
++package com.example.global.error
++
++abstract class BusinessException(
++    val errorProperty: ErrorProperty
++): RuntimeException() {
++    override fun fillInStackTrace() = this
++}
+\ No newline at end of file
+Index: hexagonal-domain/src/main/kotlin/com/example/global/annotation/Aggregate.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hexagonal-domain/src/main/kotlin/com/example/global/annotation/Aggregate.kt b/hexagonal-domain/src/main/kotlin/com/example/global/annotation/Aggregate.kt
+new file mode 100644
+--- /dev/null	(date 1675064204249)
++++ b/hexagonal-domain/src/main/kotlin/com/example/global/annotation/Aggregate.kt	(date 1675064204249)
+@@ -0,0 +1,5 @@
++package com.example.global.annotation
++
++@Retention(AnnotationRetention.RUNTIME)
++@Target(AnnotationTarget.CLASS)
++annotation class Aggregate()
