@@ -1,6 +1,6 @@
 package com.example.global.error
 
-interface ErrorProperty {
+interface CustomErrorProperty {
     fun status(): Int
 
     fun message(): String
