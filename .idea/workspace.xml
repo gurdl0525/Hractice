@@ -4,13 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7badd2cc-ae59-4d23-b444-4105ecd681dd" name="Changes" comment="project setting">
-      <change afterPath="$PROJECT_DIR$/.github/CODEOWNERS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/doamin/user/model/User.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/annotation/Aggregate.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/error/BusinessException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/error/ErrorProperty.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-domain/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-domain/build.gradle.kts" afterDir="false" />
+    <list default="true" id="7badd2cc-ae59-4d23-b444-4105ecd681dd" name="Changes" comment="🔧::build.gradle.kts">
+      <change afterPath="$PROJECT_DIR$/hexagonal-application/src/main/kotlin/com/example/domain/auth/dto/request/SignUpRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-application/src/main/kotlin/com/example/domain/auth/dto/response/TokenResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-application/src/main/kotlin/com/example/domain/auth/spi/in/UserPort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-application/src/main/kotlin/com/example/domain/auth/spi/out/UserJwtPort.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-application/src/main/kotlin/com/example/domain/auth/usecase/SignUpUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-application/src/main/kotlin/com/example/domain/user/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-application/src/main/kotlin/com/example/global/annotation/UseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/UserPersistenceAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/entity/UserJpaEntity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/exception/DuplicatedMemberException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/mapper/UserMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/repository/UserJpaRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/common/error/DomainErrorCode.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/annotation/AnnotationConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/property/ConfigurationPropertiesConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/SecurityConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/SecurityProperties.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/data/DefaultErrorResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/data/GlobalErrorCode.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/handler/GlobalExceptionHandler.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-application/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-application/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/error/BusinessException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/error/BusinessException.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/error/ErrorProperty.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/error/CustomErrorProperty.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/HracticeApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/HracticeApplication.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +84,9 @@
       <list>
         <option value="Kotlin File" />
         <option value="Kotlin Annotation" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Enum" />
+        <option value="Kotlin Object" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
       </list>
@@ -82,15 +104,20 @@
   <component name="ProjectId" id="2L2C4wwXenpW79gGdPh8x7fbPm6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Users/kanghyeok/IdeaProjects/Hractice/hexagonal-infrastructure/src/main",
+    "last_opened_file_path": "/Users/kanghyeok/IdeaProjects/Hractice/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/exception",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,13 +140,29 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/exception" />
       <recent name="$PROJECT_DIR$/hexagonal-infrastructure/src/main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com.exam" />
+      <recent name="$PROJECT_DIR$/hexagonal-application/src/main/kotlin/com/example/domain/auth" />
+      <recent name="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth" />
+      <recent name="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config" />
+      <recent name="$PROJECT_DIR$/hexagonal-application/src/main/kotlin/com/example/domain/user" />
+      <recent name="$PROJECT_DIR$/hexagonal-application/src/main/kotlin/com/example/domain" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.example.domain.auth.exception" />
+      <recent name="com.example.domain.error.data" />
+      <recent name="com.example.domain.error.exception" />
+      <recent name="com.example.global.config.annotation" />
+      <recent name="com.example.global.error.business" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.example.global.config.property" />
+      <recent name="com.example.global.error.business" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Hractice [build]">
+  <component name="RunManager" selected="Spring Boot.HracticeApplication">
     <configuration name="Hractice [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -234,6 +277,15 @@
       <method v="2" />
     </configuration>
     <configuration name="HracticeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="ACCESS_EXP" value="170" />
+        <env name="DB_DRIVE" value="com.mysql.cj.jdbc.Driver" />
+        <env name="DB_PASSWORD" value="kang0525@" />
+        <env name="DB_URL" value="jdbc:mysql://localhost:3306/Hexagon" />
+        <env name="DB_USERNAME" value="root" />
+        <env name="REFRESH_EXP" value="6790" />
+        <env name="SECRET_KEY" value="HexagonalArchitrcturePracticeSecret_Key" />
+      </envs>
       <module name="Hractice.hexagonal-infrastructure.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.HracticeApplication" />
       <method v="2">
@@ -267,7 +319,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675059602588</updated>
       <workItem from="1675059603622" duration="574000" />
-      <workItem from="1675060186415" duration="4821000" />
+      <workItem from="1675060186415" duration="13750000" />
     </task>
     <task id="LOCAL-00001" summary="project setting">
       <created>1675061844281</created>
@@ -290,7 +342,49 @@
       <option name="project" value="LOCAL" />
       <updated>1675064799184</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="📌::CODEOWNERS file">
+      <created>1675065201595</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675065201595</updated>
+    </task>
+    <task id="LOCAL-00005" summary="📌::ErrorProperty">
+      <created>1675065284287</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675065284287</updated>
+    </task>
+    <task id="LOCAL-00006" summary="📌::BusinessException">
+      <created>1675065307862</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675065307862</updated>
+    </task>
+    <task id="LOCAL-00007" summary="📌::Aggregate">
+      <created>1675065367249</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675065367249</updated>
+    </task>
+    <task id="LOCAL-00008" summary="🔧::application.yml">
+      <created>1675065399660</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675065399660</updated>
+    </task>
+    <task id="LOCAL-00009" summary="🔧::build.gradle.kts">
+      <created>1675065422895</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675065422895</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,6 +403,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project setting" />
-    <option name="LAST_COMMIT_MESSAGE" value="project setting" />
+    <MESSAGE value="::CODEOWNERS file" />
+    <MESSAGE value="::ErrorProperty" />
+    <MESSAGE value="::BusinessException" />
+    <MESSAGE value="::Aggregate" />
+    <MESSAGE value="::application.yml" />
+    <MESSAGE value="::build.gradle.kts" />
+    <option name="LAST_COMMIT_MESSAGE" value="::build.gradle.kts" />
   </component>
 </project>
