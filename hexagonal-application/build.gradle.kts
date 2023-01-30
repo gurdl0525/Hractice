@@ -12,6 +12,10 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
 }
 
+tasks.getByName<Jar>("bootJar") {
+    enabled = false
+}
+
 allOpen {
     annotation("com.example.global.annotation.UseCase")
 }
