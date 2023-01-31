@@ -2,7 +2,7 @@ package com.example.domain.user.entity
 
 import javax.persistence.*
 
-@Entity
+@Entity(name = "user")
 class UserJpaEntity(
     id: Long?,
     accountId: String,
@@ -19,6 +19,6 @@ class UserJpaEntity(
     @Column(nullable = false, length = 60)
     val password: String = password
 
-    @Column(nullable = false, length = 3)
+    @Column(nullable = false, length = 4)
     val name: String = name
 }
