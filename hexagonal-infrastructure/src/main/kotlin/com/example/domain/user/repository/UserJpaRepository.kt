@@ -6,5 +6,9 @@ import org.springframework.transaction.annotation.Transactional
 
 @Transactional(readOnly = true)
 interface UserJpaRepository: JpaRepository<UserJpaEntity, Long> {
+
     fun existsByAccountId(accountId: String): Boolean
+
+    fun findByAccountId(accountId: String): UserJpaEntity?
+
 }
