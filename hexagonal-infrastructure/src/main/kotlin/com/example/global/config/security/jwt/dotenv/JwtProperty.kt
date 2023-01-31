@@ -1,4 +1,4 @@
-package com.example.global.config.security
+package com.example.global.config.security.jwt.dotenv
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.boot.context.properties.ConstructorBinding
@@ -6,7 +6,7 @@ import java.util.*
 
 @ConfigurationProperties("jwt")
 @ConstructorBinding
-class SecurityProperties(
+class JwtProperty(
     secretKey: String,
     accessExp: Long,
     refreshExp: Long

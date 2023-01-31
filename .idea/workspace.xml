@@ -4,13 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7badd2cc-ae59-4d23-b444-4105ecd681dd" name="Changes" comment="🏮::NullPointException 해결">
+    <list default="true" id="7badd2cc-ae59-4d23-b444-4105ecd681dd" name="Changes" comment="🔍::Rename Path">
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/filter/FilterConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/filter/HandlerFilter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/filter/JwtTokenFilter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/redis/RedisRepositoryConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/jwt/GenerateJwtAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/jwt/JwtTokenParser.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/jwt/JwtTokenResolver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/jwt/dotenv/JwtProperty.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/principle/AuthDetails.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/principle/AuthDetailsService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/ExpiredTokenException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/InternalServerErrorException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/InvalidTokenException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/UserNotFoundException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/persistence/redis/dotenv/RedisProperty.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/persistence/redis/entity/RefreshToken.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/persistence/redis/repository/RefreshTokenRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-presentation/src/main/kotlin/com/example/domain/user/UserWebAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-presentation/src/main/kotlin/com/example/domain/user/dto/SignupWebRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexagonal-presentation/src/main/kotlin/com/example/global/regex/PasswordRegex.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd03d07f-6ee6-4806-a958-ac91978e3f92.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dd03d07f-6ee6-4806-a958-ac91978e3f92.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/UserPersistenceAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/UserPersistenceAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/entity/UserJpaEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/entity/UserJpaEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/exception/DuplicatedMemberException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/exception/DuplicatedMemberException.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/mapper/UserMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/mapper/UserMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/repository/UserJpaRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/repository/UserJpaRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/HracticeApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/HracticeApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/UserPersistenceAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/UserPersistenceAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/entity/UserJpaEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/entity/UserJpaEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/exception/DuplicatedMemberException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/exception/DuplicatedMemberException.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/repository/UserJpaRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/repository/UserJpaRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/property/ConfigurationPropertiesConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/SecurityConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/SecurityConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/SecurityProperties.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/data/GlobalErrorCode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/data/GlobalErrorCode.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +93,11 @@
       <list>
         <option value="Kotlin File" />
         <option value="Kotlin Annotation" />
-        <option value="Kotlin Data Class" />
         <option value="Kotlin Enum" />
         <option value="Kotlin Object" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Data Class" />
       </list>
     </option>
   </component>
@@ -85,59 +114,68 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kanghyeok/IdeaProjects/Hractice/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/exception&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;3449d87ce50067df36617439a07b1f3d&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last.edited.regexp": "Kanghyuv12@!!23412@$@$$@",
+    "last_opened_file_path": "/Users/kanghyeok/IdeaProjects/Hractice/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.scopes",
+    "spring.configuration.checksum": "3449d87ce50067df36617439a07b1f3d",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "postgresql",
+      "redis"
     ],
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;kotlin&quot;
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "kotlin"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security" />
+      <recent name="$PROJECT_DIR$/hexagonal-presentation/src/main/kotlin/domain" />
       <recent name="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth/exception" />
       <recent name="$PROJECT_DIR$/hexagonal-infrastructure/src/main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hexagonal-presentation/src/main/kotlin/com/example/global" />
+      <recent name="$PROJECT_DIR$/hexagonal-presentation/src/main/kotlin/com/example" />
+      <recent name="$PROJECT_DIR$/hexagonal-presentation/src/main/kotlin/com.example/domain" />
       <recent name="$PROJECT_DIR$/hexagonal-application/src/main/kotlin/com/example/domain/auth" />
       <recent name="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth" />
-      <recent name="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config" />
-      <recent name="$PROJECT_DIR$/hexagonal-application/src/main/kotlin/com/example/domain/user" />
-      <recent name="$PROJECT_DIR$/hexagonal-application/src/main/kotlin/com/example/domain" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.example.global.config.security.jwt.dotenv" />
+      <recent name="com.example.global.persistence.redis.repository" />
       <recent name="com.example.domain.auth.exception" />
       <recent name="com.example.domain.error.data" />
       <recent name="com.example.domain.error.exception" />
-      <recent name="com.example.global.config.annotation" />
-      <recent name="com.example.global.error.business" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.example.global.config.redis" />
+      <recent name="com.example.global.error.exception" />
       <recent name="com.example.global.config.property" />
       <recent name="com.example.global.error.business" />
     </key>
@@ -291,6 +329,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7badd2cc-ae59-4d23-b444-4105ecd681dd" name="Changes" comment="" />
@@ -301,7 +342,7 @@
       <workItem from="1675059603622" duration="574000" />
       <workItem from="1675060186415" duration="14562000" />
       <workItem from="1675085718379" duration="618000" />
-      <workItem from="1675114491150" duration="387000" />
+      <workItem from="1675114491150" duration="13827000" />
     </task>
     <task id="LOCAL-00001" summary="project setting">
       <created>1675061844281</created>
@@ -541,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675086265090</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="🔍::Rename Path">
+      <created>1675114908949</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1675114908949</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +607,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="::.gitkeep" />
     <MESSAGE value="::PropertyConfig" />
     <MESSAGE value="::AnnotationConfig" />
     <MESSAGE value="::UserPort" />
@@ -584,6 +631,7 @@
     <MESSAGE value="::bootJar막기" />
     <MESSAGE value="::Path 변경" />
     <MESSAGE value="::NullPointException 해결" />
-    <option name="LAST_COMMIT_MESSAGE" value="::NullPointException 해결" />
+    <MESSAGE value="::Rename Path" />
+    <option name="LAST_COMMIT_MESSAGE" value="::Rename Path" />
   </component>
 </project>
