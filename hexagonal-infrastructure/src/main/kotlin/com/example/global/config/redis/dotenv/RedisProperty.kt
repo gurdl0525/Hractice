@@ -1,4 +1,4 @@
-package com.example.global.persistence.redis.dotenv
+package com.example.global.config.redis.dotenv
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.boot.context.properties.ConstructorBinding

@@ -1,4 +1,4 @@
-package com.example.global.persistence.redis.entity
+package com.example.global.config.redis.entity
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.redis.core.RedisHash

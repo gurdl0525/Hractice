@@ -3,8 +3,8 @@ package com.example.global.config.security.jwt
 import com.example.domain.auth.dto.response.TokenResponse
 import com.example.domain.auth.spi.out.UserJwtPort
 import com.example.global.config.security.jwt.dotenv.JwtProperty
-import com.example.global.persistence.redis.entity.RefreshToken
-import com.example.global.persistence.redis.repository.RefreshTokenRepository
+import com.example.global.config.redis.entity.RefreshToken
+import com.example.global.config.redis.repository.RefreshTokenRepository
 import io.jsonwebtoken.Jwts
 import io.jsonwebtoken.SignatureAlgorithm
 import org.springframework.stereotype.Component
