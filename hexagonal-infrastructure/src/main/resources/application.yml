@@ -17,6 +17,10 @@ spring:
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
 
+  redis:
+    port: ${REDIS_PORT}
+    host: ${REDIS_HOST}
+
 jwt:
   secret_key: ${SECRET_KEY}
   access_exp: ${ACCESS_EXP}
