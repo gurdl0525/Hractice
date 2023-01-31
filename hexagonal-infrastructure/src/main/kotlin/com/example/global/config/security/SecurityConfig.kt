@@ -16,7 +16,9 @@ class SecurityConfig(
     @Bean
     @Throws(Exception::class)
     protected fun filterChain(http: HttpSecurity): SecurityFilterChain {
+
         return http
+
             .csrf().disable()
             .formLogin().disable()
             .cors()
@@ -28,6 +30,9 @@ class SecurityConfig(
             .and()
             .authorizeRequests()
             .antMatchers("*").permitAll()
+
+            //.and()
+            //.apply(FilterConfig(objectMapper))
 
             .and().build()
     }
