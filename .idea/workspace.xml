@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7badd2cc-ae59-4d23-b444-4105ecd681dd" name="Changes" comment="📌::UserWebAdapter">
+    <list default="true" id="7badd2cc-ae59-4d23-b444-4105ecd681dd" name="Changes" comment="🗳️::">
+      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/redis/repository/RefreshTokenRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/HracticeApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/HracticeApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/property/ConfigurationPropertiesConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/error/BusinessException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/error/BusinessException.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/error/CustomErrorProperty.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/error/CustomErrorProperty.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/filter/JwtTokenFilter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/filter/JwtTokenFilter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/redis/RedisRepositoryConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/redis/RedisRepositoryConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/jwt/GenerateJwtAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/jwt/GenerateJwtAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/ExpiredTokenException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/ExpiredTokenException.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/InternalServerErrorException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/InternalServerErrorException.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/InvalidTokenException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/InvalidTokenException.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/UserNotFoundException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/UserNotFoundException.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/persistence/redis/dotenv/RedisProperty.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/redis/dotenv/RedisProperty.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/persistence/redis/entity/RefreshToken.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/redis/entity/RefreshToken.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/persistence/redis/repository/RefreshTokenRepository.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +82,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
@@ -129,18 +141,18 @@
       <recent name="$PROJECT_DIR$/hexagonal-infrastructure/src/main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/redis" />
       <recent name="$PROJECT_DIR$/hexagonal-presentation/src/main/kotlin/com/example/global" />
       <recent name="$PROJECT_DIR$/hexagonal-presentation/src/main/kotlin/com/example" />
       <recent name="$PROJECT_DIR$/hexagonal-presentation/src/main/kotlin/com.example/domain" />
       <recent name="$PROJECT_DIR$/hexagonal-application/src/main/kotlin/com/example/domain/auth" />
-      <recent name="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/auth" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.example.global.config.redis.repository" />
       <recent name="com.example.global.config.security.jwt.dotenv" />
       <recent name="com.example.global.persistence.redis.repository" />
       <recent name="com.example.domain.auth.exception" />
       <recent name="com.example.domain.error.data" />
-      <recent name="com.example.domain.error.exception" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.example.global.config.redis" />
@@ -313,56 +325,7 @@
       <workItem from="1675059603622" duration="574000" />
       <workItem from="1675060186415" duration="14562000" />
       <workItem from="1675085718379" duration="618000" />
-      <workItem from="1675114491150" duration="15097000" />
-    </task>
-    <task id="LOCAL-00014" summary="📌::영속성 어뎁터">
-      <created>1675074259832</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1675074259832</updated>
-    </task>
-    <task id="LOCAL-00015" summary="📌::Http객체와 Entity매핑해주는 맵퍼">
-      <created>1675074290482</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1675074290482</updated>
-    </task>
-    <task id="LOCAL-00016" summary="📌::userJwtPort">
-      <created>1675074318896</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1675074318896</updated>
-    </task>
-    <task id="LOCAL-00017" summary="📌::UserJpaRepository">
-      <created>1675074331258</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1675074331258</updated>
-    </task>
-    <task id="LOCAL-00018" summary="📌::UserJpaEntity">
-      <created>1675074342721</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1675074342721</updated>
-    </task>
-    <task id="LOCAL-00019" summary="📌::UseCase Annotation">
-      <created>1675074367524</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1675074367524</updated>
-    </task>
-    <task id="LOCAL-00020" summary="📌::TokenResponse">
-      <created>1675074382389</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1675074382389</updated>
+      <workItem from="1675114491150" duration="17187000" />
     </task>
     <task id="LOCAL-00021" summary="📌::SignUpUseCase">
       <created>1675074397585</created>
@@ -658,7 +621,56 @@
       <option name="project" value="LOCAL" />
       <updated>1675130998076</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="🔍::ConfigurationPropertiesScan">
+      <created>1675131018218</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1675131018218</updated>
+    </task>
+    <task id="LOCAL-00064" summary="🔍::ConfigurationPropertiesScan">
+      <created>1675131034168</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1675131034168</updated>
+    </task>
+    <task id="LOCAL-00065" summary="🔍::Refactoring">
+      <created>1675131062649</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1675131062649</updated>
+    </task>
+    <task id="LOCAL-00066" summary="🔍::Refactoring">
+      <created>1675131070888</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1675131070888</updated>
+    </task>
+    <task id="LOCAL-00067" summary="🔍::Refactoring">
+      <created>1675131097973</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1675131097973</updated>
+    </task>
+    <task id="LOCAL-00068" summary="🗳️::ConfigurationPropertiesConfig">
+      <created>1675131125967</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1675131125967</updated>
+    </task>
+    <task id="LOCAL-00069" summary="🗳️::">
+      <created>1675131137596</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1675131137596</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -676,10 +688,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="::Refactoring" />
-    <MESSAGE value="::length 3 -&gt; 4" />
-    <MESSAGE value="::Object -&gt; Companion Object" />
-    <MESSAGE value="::redis properties" />
     <MESSAGE value="::findByAccountIdOrNull" />
     <MESSAGE value="::FilterConfig" />
     <MESSAGE value="::INVALID_TOKEN, EXPIRED_TOKEN, USER_NOT_FOUND, INTERNAL_SERVER_ERROR" />
@@ -701,6 +709,10 @@
     <MESSAGE value="::SignupWebRequest" />
     <MESSAGE value="::UserNotFoundException" />
     <MESSAGE value="::UserWebAdapter" />
-    <option name="LAST_COMMIT_MESSAGE" value="::UserWebAdapter" />
+    <MESSAGE value="::ConfigurationPropertiesScan" />
+    <MESSAGE value="::Refactoring" />
+    <MESSAGE value="️::ConfigurationPropertiesConfig" />
+    <MESSAGE value="️::" />
+    <option name="LAST_COMMIT_MESSAGE" value="️::" />
   </component>
 </project>
