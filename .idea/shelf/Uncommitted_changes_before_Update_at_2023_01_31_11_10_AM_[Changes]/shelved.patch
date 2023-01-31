@@ -1,0 +1,36 @@
+Index: hexagonal-infrastructure/src/main/kotlin/com/example/global/config/property/ConfigurationPropertiesConfig.kt
+===================================================================
+diff --git a/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/property/ConfigurationPropertiesConfig.kt b/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/property/ConfigurationPropertiesConfig.kt
+deleted file mode 100644
+--- a/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/property/ConfigurationPropertiesConfig.kt	(revision 54bb98077d49b5564799530b8dd3701755900be6)
++++ /dev/null	(revision 54bb98077d49b5564799530b8dd3701755900be6)
+@@ -1,9 +0,0 @@
+-package com.example.global.config.property
+-
+-import com.example.global.config.security.SecurityProperties
+-import org.springframework.boot.context.properties.ConfigurationPropertiesScan
+-import org.springframework.context.annotation.Configuration
+-
+-@ConfigurationPropertiesScan(basePackageClasses = [SecurityProperties::class])
+-@Configuration
+-class ConfigurationPropertiesConfig
+\ No newline at end of file
+Index: hexagonal-infrastructure/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>spring:\n\n  jackson:\n    property-naming-strategy: SNAKE_CASE\n\n  jpa:\n    hibernate:\n      ddl-auto: update\n    properties:\n      hibernate:\n        format_sql: true\n        show_sql: true\n\n  datasource:\n    driver-class-name: ${DB_DRIVE}\n    url: ${DB_URL}\n    username: ${DB_USERNAME}\n    password: ${DB_PASSWORD}\n\n  redis:\n    port: ${REDIS_PORT}\n    host: ${REDIS_HOST}\n\njwt:\n  secret_key: ${SECRET_KEY}\n  access_exp: ${ACCESS_EXP}\n  refresh_exp: ${REFRESH_EXP}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hexagonal-infrastructure/src/main/resources/application.yml b/hexagonal-infrastructure/src/main/resources/application.yml
+--- a/hexagonal-infrastructure/src/main/resources/application.yml	(revision 54bb98077d49b5564799530b8dd3701755900be6)
++++ b/hexagonal-infrastructure/src/main/resources/application.yml	(date 1675130302826)
+@@ -5,7 +5,7 @@
+ 
+   jpa:
+     hibernate:
+-      ddl-auto: update
++      ddl-auto: create
+     properties:
+       hibernate:
+         format_sql: true
