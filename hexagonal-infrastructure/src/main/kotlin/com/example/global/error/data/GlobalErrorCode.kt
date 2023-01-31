@@ -7,6 +7,12 @@ enum class GlobalErrorCode(
     private val status: Int
 ): CustomErrorProperty {
 
+    INVALID_TOKEN("invalid token", 401),
+    EXPIRED_TOKEN("expired token", 401),
+
+    USER_NOT_FOUND("user not found", 404),
+
+    INTERNAL_SERVER_ERROR("internal server error", 500)
     ;
 
     override fun status() = status
