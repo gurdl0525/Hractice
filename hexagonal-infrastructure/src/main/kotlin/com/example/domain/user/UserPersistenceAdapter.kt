@@ -12,10 +12,11 @@ class UserPersistenceAdapter(
     private val userJpaRepository: UserJpaRepository,
     private val userMapper: UserMapper
 ): UserPort {
+
     override fun saveUser(user: User) {
 
         if(userJpaRepository.existsByAccountId(user.accountId)) {
-            throw DuplicatedMemberException
+            throw DuplicatedMemberException.EXCEPTION
         }
 
         userJpaRepository.save(userMapper.toEntity(user))
