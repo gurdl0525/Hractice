@@ -19,6 +19,8 @@ class UserPersistenceAdapter(
             throw DuplicatedMemberException.EXCEPTION
         }
 
-        userJpaRepository.save(userMapper.toEntity(user))
+        userJpaRepository.save(
+            userMapper.toEntity(user)
+        )
     }
 }

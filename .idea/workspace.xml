@@ -5,21 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7badd2cc-ae59-4d23-b444-4105ecd681dd" name="Changes" comment="🗳️::">
-      <change afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/redis/repository/RefreshTokenRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/error/BusinessException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/error/BusinessException.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/error/CustomErrorProperty.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-domain/src/main/kotlin/com/example/global/error/CustomErrorProperty.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/common/error/DomainErrorCode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/common/error/DomainErrorCode.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/UserPersistenceAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/domain/user/UserPersistenceAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/filter/JwtTokenFilter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/filter/JwtTokenFilter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/redis/RedisRepositoryConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/redis/RedisRepositoryConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/jwt/GenerateJwtAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security/jwt/GenerateJwtAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/redis/repository/RefreshTokenRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/redis/repository/RefreshTokenRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/data/GlobalErrorCode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/data/GlobalErrorCode.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/ExpiredTokenException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/ExpiredTokenException.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/InternalServerErrorException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/InternalServerErrorException.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/InvalidTokenException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/InvalidTokenException.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/UserNotFoundException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/error/exception/UserNotFoundException.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/persistence/redis/dotenv/RedisProperty.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/redis/dotenv/RedisProperty.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/persistence/redis/entity/RefreshToken.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/redis/entity/RefreshToken.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/persistence/redis/repository/RefreshTokenRepository.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-infrastructure/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-presentation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-presentation/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-presentation/src/main/kotlin/com/example/domain/user/UserWebAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-presentation/src/main/kotlin/com/example/domain/user/UserWebAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexagonal-presentation/src/main/kotlin/com/example/domain/user/dto/SignupWebRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/hexagonal-presentation/src/main/kotlin/com/example/domain/user/dto/SignupWebRequest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +60,11 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build setup" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Hractice" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -76,8 +80,8 @@
         <option value="Kotlin Enum" />
         <option value="Kotlin Object" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Data Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -99,40 +103,40 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last.edited.regexp": "Kanghyuv12@!!23412@$@$$@",
-    "last_opened_file_path": "/Users/kanghyeok/IdeaProjects/Hractice/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.scopes",
-    "spring.configuration.checksum": "3449d87ce50067df36617439a07b1f3d",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last.edited.regexp&quot;: &quot;Kanghyuv12@!!23412@$@$$@&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kanghyeok/IdeaProjects/Hractice/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3449d87ce50067df36617439a07b1f3d&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "postgresql",
-      "redis"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;postgresql&quot;,
+      &quot;redis&quot;
     ],
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "kotlin"
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;kotlin&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/hexagonal-infrastructure/src/main/kotlin/com/example/global/config/security" />
@@ -326,6 +330,8 @@
       <workItem from="1675060186415" duration="14562000" />
       <workItem from="1675085718379" duration="618000" />
       <workItem from="1675114491150" duration="17187000" />
+      <workItem from="1675246586676" duration="7000" />
+      <workItem from="1675420106649" duration="8600000" />
     </task>
     <task id="LOCAL-00021" summary="📌::SignUpUseCase">
       <created>1675074397585</created>

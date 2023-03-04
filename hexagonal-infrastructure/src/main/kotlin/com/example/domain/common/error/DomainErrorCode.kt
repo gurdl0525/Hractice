@@ -1,16 +1,17 @@
 package com.example.domain.common.error
 
 import com.example.global.error.CustomErrorProperty
+import org.springframework.http.HttpStatus
 
 enum class DomainErrorCode(
     private val message: String,
-    private val status: Int
+    private val status: HttpStatus
 ): CustomErrorProperty {
 
-    DUPLICATED_MEMBER("AUTH-01", 400)
+    DUPLICATED_MEMBER("duplicated member", HttpStatus.BAD_REQUEST)
     ;
 
-    override fun message() = message
+    override fun status() = status.value()
 
-    override fun status() = status
+    override fun message() = message
 }
